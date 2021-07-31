@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SET Conference 2021 Circuit Assembler</title>
+        <style>
+            canvas {
+                border: 1px solid #d3d3d3;
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+    
+    <body onload="initialize()">
+
+        <div class="container pt-3 bg-light text-dark">
+            <h1>Circuit Model</h1>
+            <p>Construct your circuit here!<br>
+            Each building can only have one building connecting to it, and one building that it connected to (i.e. one input, one output)<br>
+            Attempting to cram more than one input onto a building will break connections with other buildings.</p>
+
+    
+        </div>
+
+        <div class="container pt-3 bg-light text-dark" id="circuit">
+            <script src="interface.js"></script>
+        </div>   
+
+        <div class="container pt-3 bg-light text-dark" id="print">
+        </div>   
+    </body>
+</html>
